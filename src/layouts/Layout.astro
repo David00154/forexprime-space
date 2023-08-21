@@ -157,3 +157,65 @@ const { title } = Astro.props;
 <!-- 
 <script src="//code.tidio.co/yd6swpqdh9eqcuvtec3bampn72xmhqtw.js" async
 ></script> -->
+<!-- Start of Async Drift Code -->
+<script>
+  "use strict";
+  //@ts-ignore
+  !(function () {
+    //@ts-ignore
+    var t = (window.driftt = window.drift = window.driftt || []);
+    if (!t.init) {
+      if (t.invoked)
+        return void (
+          window.console &&
+          console.error &&
+          console.error("Drift snippet included twice.")
+        );
+      (t.invoked = !0),
+        (t.methods = [
+          "identify",
+          "config",
+          "track",
+          "reset",
+          "debug",
+          "show",
+          "ping",
+          "page",
+          "hide",
+          "off",
+          "on",
+        ]),
+        //@ts-ignore
+        (t.factory = function (e) {
+          return function () {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }),
+        //@ts-ignore
+        t.methods.forEach(function (e) {
+          t[e] = t.factory(e);
+        }),
+        //@ts-ignore
+        (t.load = function (t) {
+          var e = 3e5,
+            //@ts-ignore
+            n = Math.ceil(new Date() / e) * e,
+            o = document.createElement("script");
+          (o.type = "text/javascript"),
+            (o.async = !0),
+            //@ts-ignore
+            (o.crossorigin = "anonymous"),
+            (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js");
+          var i = document.getElementsByTagName("script")[0];
+          //@ts-ignore
+          i.parentNode.insertBefore(o, i);
+        });
+    }
+  })();
+  //@ts-ignore
+  drift.SNIPPET_VERSION = "0.3.1";
+  //@ts-ignore
+  drift.load("sw96nnesumap");
+</script>
+<!-- End of Async Drift Code -->
