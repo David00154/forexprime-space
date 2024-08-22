@@ -93,7 +93,7 @@ const Header: FC<{ pathname: string }> = ({ pathname }) => {
             </svg>
           </a> */}
           <a
-            href="https://app.forexprime.space"
+            href="https://app.forexprimelt.space"
             id=""
             className="text-[15px] text-black bg-custom-yellow px-[25px] py-[17px] md:inline-block hidden hover:bg-white hover:text-custom-dark-primary custom-transition ml-[35px]"
           >
@@ -150,7 +150,7 @@ const MobileNav = forwardRef(function (props: any, ref: any) {
         {/*  */}
         <a
           className="w-full text-center mx-0 mb-[20px] text-black flex items-center bg-custom-yellow justify-center h-[45px]"
-          href="https://app.forexprime.space"
+          href="https://app.forexprimelt.space"
         >
           Login
         </a>
